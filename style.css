@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.kanban-board {
+    display: flex;
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.kanban-column {
+    background-color: #e2e2e2;
+    border-radius: 8px;
+    padding: 10px;
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.kanban-column h2 {
+    text-align: center;
+    color: #333;
+}
+
+.kanban-cards {
+    min-height: 300px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.kanban-card {
+    background-color: #4795e9;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    cursor: grab;
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4795e9;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.toggle-sidebar {
+    position: fixed;
+    top: 20px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #444;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      
+}
+  
+  /* Adicionar um efeito ao passar o mouse */
+.toggle-sidebar:hover {
+    background-color: #444;
+}
+  
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: left 0.3s ease;
+    padding: 20px;
+    z-index: 999;
+}
+  
+.sidebar.open {
+    left: 0;
+}
+  
+.profile-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+  
+.profile-picture img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+  
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+  
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.menu-item {
+    background: none;
+    border: none;
+    color: #ecf0f1;
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+    font-size: 1rem;
+    cursor: pointer;
+}
+  
+.menu-item:hover,
+  a:hover {
+    color: #1abc9c;
+}
+  
+a {
+    text-decoration: none;
+    color: #ecf0f1;
+    display: block;
+    padding: 10px;
+}
+  
+main {
+    padding: 20px;
+}
+  
+.hidden {
+    display: none;
+}
+
+  /* Seção de projetos */
+#projetos-section {
+    margin-top: 20px;
+  }
+  
+.hidden {
+    display: none;
+}
+  
+#project-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  
+#add-project {
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+#add-project:hover {
+    background-color: #16a085;
+}
+  
+  /* Lista de projetos */
+#project-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+  
+#project-list li {
+    background-color: #444;
+    color: #fff;
+    margin-bottom: 5px;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+  #project-list li button {
+    background: transparent;
+    border: none;
+    color: #e74c3c;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
